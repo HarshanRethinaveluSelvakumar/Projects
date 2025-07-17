@@ -1,0 +1,53 @@
+List the ID and name of all employees.
+for $emp in //employee
+return
+ <employee>
+ <id>{ $emp/employee_id/text() }</id>
+ <name>{ $emp/name/text() }</name>
+ </employee>
+
+List the name of all projects along with their type.
+for $proj in //project
+return
+ <project>
+ <name>{data($proj/name)}</name>
+ <type>{data($proj/type)}</type>
+ </project>
+
+List the ID and name of all employees together with the project name and project
+category they work on.
+for $emp in //employee,
+ $rec in //project_record[employee_id = $emp/employee_id],
+ $proj in //project[project_id = $rec/project_id]
+return
+ <employee_project>
+ <employee_id>{data($emp/employee_id)}</employee_id>
+ <employee_name>{data($emp/name)}</employee_name>
+ <project_name>{data($proj/name)}</project_name>
+ <project_category>{data($proj/category)}</project_category>
+ </employee_project>
+
+
+
+List the ID and name of all tasks with the name and ID of the employee who works on
+the task.
+for $task in //task,
+ $rec in //project_record[project_id = $task/project_id],
+ $emp in //employee[employee_id = $rec/employee_id]
+return
+ <task_employee>
+ <task_id>{data($task/task_code)}</task_id>
+ <task_name>{data($task/name)}</task_name>
+ <employee_id>{data($emp/employee_id)}</employee_id>
+ <employee_name>{data($emp/name)}</employee_name>
+ </task_employee>
+
+List the ID and name of all employees with the office number they are based in.
+for $emp in //employee,
+ $office in //office[office_id = $emp/office_id]
+return
+ <employee_office>
+ <employee_id>{data($emp/employee_id)}</employee_id>
+ <employee_name>{data($emp/name)}</employee_name>
+ <office_id>{data($office/office_id)}</office_id>
+ </employee_office>

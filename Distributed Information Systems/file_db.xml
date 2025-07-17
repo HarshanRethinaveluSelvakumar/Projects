@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE company [
+<!ELEMENT company (department*, employee*, office*, project*, task*, project_record*, team*)>
+
+<!ELEMENT department (department_id, name)>
+<!ELEMENT department_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT employee (employee_id, name, role, job_type, department_id, office_id)>
+<!ELEMENT employee_id (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT job_type (#PCDATA)>
+<!ELEMENT department_id (#PCDATA)>
+<!ELEMENT office_id (#PCDATA)>
+
+<!ELEMENT office (office_id, location)>
+<!ELEMENT office_id (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+
+<!ELEMENT project (project_id, name, department_id, type, category)>
+<!ELEMENT project_id (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+
+<!ELEMENT task (task_code, name, weight, project_id)>
+<!ELEMENT task_code (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT project_id (#PCDATA)>
+
+<!ELEMENT project_record (record_id, project_id, employee_id, month_id, completion)>
+<!ELEMENT record_id (#PCDATA)>
+<!ELEMENT month_id (#PCDATA)>
+<!ELEMENT completion (#PCDATA)>
+
+<!ELEMENT team (team_id)>
+<!ELEMENT team_id (#PCDATA)>
+]>
+
+<company>
+    <department>
+        <department_id>Dept01</department_id>
+        <name>Group18 Technical</name>
+    </department>
+    <department>
+        <department_id>Dept02</department_id>
+        <name>Group18 Management</name>
+    </department>
+    <department>
+        <department_id>Dept03</department_id>
+        <name>Group19 Technical</name>
+    </department>
+    <department>
+        <department_id>Dept04</department_id>
+        <name>Group19 Management</name>
+    </department>
+    <department>
+        <department_id>Dept05</department_id>
+        <name>Group20 Technical</name>
+    </department>
+
+    <employee>
+        <employee_id>Emp01</employee_id>
+        <name>Mohan</name>
+        <role>App Developer</role>
+        <job_type>Software</job_type>
+        <department_id>Dept01</department_id>
+        <office_id>Office01</office_id>
+    </employee>
+    <employee>
+        <employee_id>Emp02</employee_id>
+        <name>Harshan</name>
+        <role>App Developer</role>
+        <job_type>Software</job_type>
+        <department_id>Dept01</department_id>
+        <office_id>Office01</office_id>
+    </employee>
+    <employee>
+        <employee_id>Emp03</employee_id>
+        <name>Prithvi</name>
+        <role>App Developer</role>
+        <job_type>Software</job_type>
+        <department_id>Dept01</department_id>
+        <office_id>Office01</office_id>
+    </employee>
+    <employee>
+        <employee_id>Emp04</employee_id>
+        <name>Manoj</name>
+        <role>HR</role>
+        <job_type>Management</job_type>
+        <department_id>Dept02</department_id>
+        <office_id>Office01</office_id>
+    </employee>
+    <employee>
+        <employee_id>Emp05</employee_id>
+        <name>valerio</name>
+        <role>HR</role>
+        <job_type>Management</job_type>
+        <department_id>Dept02</department_id>
+        <office_id>Office01</office_id>
+    </employee>
+
+
+    <office>
+        <office_id>Office01</office_id>
+        <location>Glasgow</location>
+    </office>
+    <office>
+        <office_id>Office01</office_id>
+        <location>Chennai</location>
+    </office>
+    <office>
+        <office_id>Office01</office_id>
+        <location>Bangalore</location>
+    </office>
+    <office>
+        <office_id>Office01</office_id>
+        <location>London</location>
+    </office>
+    <office>
+        <office_id>Office01</office_id>
+        <location>New York</location>
+    </office>
+
+    <project>
+        <project_id>Proj01</project_id>
+        <name>DIS App</name>
+        <department_id>Dept01</department_id>
+        <type>Mobile App</type>
+        <category>Educational Software</category>
+    </project>
+    <project>
+        <project_id>Proj02</project_id>
+        <name>ML App</name>
+        <department_id>Dept01</department_id>
+        <type>Mobile App</type>
+        <category>Educational Software</category>
+    </project>
+    <project>
+        <project_id>Proj03</project_id>
+        <name>BA App</name>
+        <department_id>Dept01</department_id>
+        <type>Web App</type>
+        <category>Educational Software</category>
+    </project>
+    <project>
+        <project_id>Proj04</project_id>
+        <name>DIS Website</name>
+        <department_id>Dept01</department_id>
+        <type>Web App</type>
+        <category>Educational Software</category>
+    </project>
+    <project>
+        <project_id>Proj05</project_id>
+        <name>ML Website</name>
+        <department_id>Dept01</department_id>
+        <type>Web App</type>
+        <category>Educational Software</category>
+    </project>
+
+    <task>
+        <task_code>Task01</task_code>
+        <name>Front-end</name>
+        <weight>30</weight>
+        <project_id>Proj01</project_id>
+    </task>
+    <task>
+        <task_code>Task01</task_code>
+        <name>Back-End</name>
+        <weight>30</weight>
+        <project_id>Proj01</project_id>
+    </task>
+    <task>
+        <task_code>Task01</task_code>
+        <name>API</name>
+        <weight>20</weight>
+        <project_id>Proj01</project_id>
+    </task>
+    <task>
+        <task_code>Task01</task_code>
+        <name>User Testing</name>
+        <weight>10</weight>
+        <project_id>Proj01</project_id>
+    </task>
+    <task>
+        <task_code>Task01</task_code>
+        <name>Automated Testing</name>
+        <weight>10</weight>
+        <project_id>Proj01</project_id>
+    </task>
+
+    <project_record>
+        <record_id>Rec01</record_id>
+        <project_id>Proj01</project_id>
+        <employee_id>Emp01</employee_id>
+        <month_id>4</month_id>
+        <completion>Pending</completion>
+    </project_record>
+    <project_record>
+        <record_id>Rec02</record_id>
+        <project_id>Proj01</project_id>
+        <employee_id>Emp02</employee_id>
+        <month_id>4</month_id>
+        <completion>Pending</completion>
+    </project_record>
+    <project_record>
+        <record_id>Rec03</record_id>
+        <project_id>Proj01</project_id>
+        <employee_id>Emp03</employee_id>
+        <month_id>4</month_id>
+        <completion>Pending</completion>
+    </project_record>
+    <project_record>
+        <record_id>Rec04</record_id>
+        <project_id>Proj01</project_id>
+        <employee_id>Emp01</employee_id>
+        <month_id>5</month_id>
+        <completion>Completed</completion>
+    </project_record>
+    <project_record>
+        <record_id>Rec05</record_id>
+        <project_id>Proj01</project_id>
+        <employee_id>Emp02</employee_id>
+        <month_id>5</month_id>
+        <completion>Completed</completion>
+    </project_record>
+
+    <team>
+        <team_id>Team01</team_id>
+    </team>
+    <team>
+        <team_id>Team02</team_id>
+    </team>
+    <team>
+        <team_id>Team03</team_id>
+    </team>
+    <team>
+        <team_id>Team04</team_id>
+    </team>
+    <team>
+        <team_id>Team05</team_id>
+    </team>
+</company>

@@ -1,0 +1,51 @@
+List the ID and name of all employees. 
+SELECT ?employeeID ? EmployeeName 
+WHERE {  
+?employee a :Employee . 
+ ?employee :hasEmployeeID ?employeeID 
+ ?employee :hasEmployeeName ?employeeName . 
+} 
+
+List the name of all projects together with their type. 
+SELECT ?projectName ?ProjectType 
+WHERE { 
+ ?project a:Project . 
+ ?project :hasProjectName ?projectName . 
+ ?project :hasProjectType ?projectType . 
+} 
+
+List the ID and name of all employees together with the project name and project category they work on. 
+SELECT ?employeeID ?employeeName ?projectName ?projectCategory 
+WHERE { 
+?employee a: Employee .
+?employee :hasEmployeeID ?employeeID . 
+?employee :hasEmployeeName ?employeeName. 
+?project a:Project . 
+ ?project :hasProjectName ?projectName . 
+ ?project: hasProjectCategory ?projectCategory . 
+?employee :worksOn ?project . 
+} 
+
+
+
+List the ID and name of all tasks together with the name and ID of the employee who works on this task. 
+SELECT ?taskID ?taskName ?employeeName 
+WHERE { 
+?task a :Task . 
+?task :hasTaskID ?taskID . 
+?employee a :Employee . 
+?employee  :hasEmployeeID ?emplyeeID . 
+?employee  :hasEmployeeName ?employeeName . 
+?employee :worksOnTask ?task . 
+} 
+
+List the ID and name of all employees together with the office number that they are based in. 
+SELECT ?employeeID ?employeeName ?officeNumber 
+WHERE { 
+?employee a :Employee . 
+?employee :hasEmployeeID ?employeeID . 
+?employee :hasEmployeeName ?employeeName . 
+?office a :Office . 
+?office :hasOfficeNumber ?officeNumber . 
+?employee :isLocatedIn ?office . 
+}

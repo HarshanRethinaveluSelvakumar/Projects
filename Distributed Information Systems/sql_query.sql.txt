@@ -1,0 +1,10 @@
+1.
+SELECT Employee_ID, Name FROM Employee;
+2.
+SELECT Name, Type FROM Project;
+3. 
+SELECT e. Employee_ID, e.Name, p.Name AS Project_Name, p.Category FROM Employee e JOIN Project_Record pr ON e. Employee_ID = pr. Employee_ID JOIN Project p ON pr. Project_ID = p.Project_ID;
+4.
+SELECT t. Task_code, t.Name AS Task_Name, e. Employee_ID, e.Name AS Employee_Name FROM Task t JOIN Project_Record pr ON t. Project_ID = pr. Project_ID JOIN Employee e ON pr. Employee_ID = e. Employee_ID;
+5.
+SELECT e. Employee_ID, e.Name, o.Office_ID FROM Employee e JOIN Office o ON e.Office_ID = 0.Office_ID;
