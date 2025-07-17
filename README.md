@@ -10,6 +10,7 @@ Each folder in this repository represents a separate project or major coursework
 
 - Source code and scripts
 - Reports and documentation
+- Project Description
 
 ---
 
