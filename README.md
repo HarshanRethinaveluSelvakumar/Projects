@@ -9,7 +9,7 @@ Welcome to my portfolio of projects. This repository serves as a central hub for
 Each folder in this repository represents a separate project or major coursework module. Inside each folder, you’ll typically find:
 
 - Source code and scripts
-- Reports and documentation (PDFs, Presentations, etc.)
+- Reports and documentation
 
 ---
 
