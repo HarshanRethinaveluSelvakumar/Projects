@@ -1,6 +1,6 @@
 # Projects Portfolio
 
-Welcome to my portfolio of projects. This repository serves as a central hub for all the academic and research work I undertook throughout my academic career. It includes coursework, research projects, assignments and dissertation.
+Welcome to my portfolio of projects. This repository serves as a central hub for all the academic and research work I undertook throughout my academic career. It includes coursework, research projects and assignments.
 
 ---
 
