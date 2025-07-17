@@ -1,0 +1,7 @@
+Part 1:
+- This part involves using a genetic algorithm and hill climber on some real data sets to solve the test case prioritisation problem: identifying the optimal order in which a set of tests should be run. 
+- The aim of the assignment is for you to gain experience in applying the principles of SBSE to a real problem and compare the results with other strategies.
+
+Part 2:
+- This part is an adaptation of the first part but instead looks at using a GA to find a multi-objective solution to the test minimisation problem. 
+- This part aims to develop the skills and understanding in solving multi-objective problems.
