@@ -1,6 +1,0 @@
-Regression Problem:
-- The aim is to develop a machine learning model to predict the popularity of songs based on the various attributes given in the dataset. 
-- The train and test datasets are provided. The main objective is to build a regression model that can predict the popularity of songs using the given attributes while minimizing the Root Mean Squared Error (RMSE). 
-
-Classification Problem:
-- The aim is to develop a machine learning model to predict the genre of a song using classification techniques.
