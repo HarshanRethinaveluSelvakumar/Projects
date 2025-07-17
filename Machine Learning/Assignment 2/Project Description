@@ -1,1 +1,7 @@
+Part 1:
+-  This part explored different machine learning models for the Relevance Classification Task, focusing on classifying text data.
 
+Part 2:
+- The main objective is to classify the images of people’s face to detect their emotion (Emotion Recognition). 
+- In this part, three different models have been performed for Emotion Recognition: Support Vector Machine (SVM), Deep Neural Network (DNN) and 
+  Convolutional Neural Network (CNN).
