@@ -1,0 +1,6 @@
+This coursework is a project to design and implement data models for a given scenario as the following:
+- Design and implement relational database for the given scenario.
+- Design and implement XML file for the given scenario.
+- Design and build an ontology for the given scenario.
+- Write SQL, XQuery and SPARQL queries to answer the given five business requirements.
+- Write one paragraph to state some extra knowledge that can be retrieved from the ontology but not from the relational or XML data models.
